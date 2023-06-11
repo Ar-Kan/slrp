@@ -25,7 +25,7 @@ dockers:
   - &docker
     goarch: amd64
     image_templates:
-      - 'ghcr.io/Ar-Kan/slrp:{{ .Tag }}-amd64'
+      - 'ghcr.io/ar-kan/slrp:{{ .Tag }}-amd64'
     dockerfile: Dockerfile
     build_flag_templates:
       - '--label=org.opencontainers.image.created={{.Date}}'
@@ -40,4 +40,4 @@ dockers:
   - <<: *docker
     goarch: arm64
     image_templates:
-      - 'ghcr.io/Ar-Kan/slrp:{{ .Tag }}-arm64'
+      - 'ghcr.io/ar-kan/slrp:{{ .Tag }}-arm64'
