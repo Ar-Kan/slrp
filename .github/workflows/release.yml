@@ -22,4 +22,4 @@ jobs:
       - run: make build
       - uses: goreleaser/goreleaser-action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GHAC }}
